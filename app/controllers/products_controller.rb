@@ -9,4 +9,8 @@ class ProductsController < ApplicationController
     redirect_to :products
   end
 
+  def product_params
+    params.require(:product)
+  end
+
 end
