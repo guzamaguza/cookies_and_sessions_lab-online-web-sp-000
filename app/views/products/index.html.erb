@@ -1,12 +1,10 @@
 Your Cart:
 <ul>
-
-<% session[:cart].each do |item| %>
-  <li>
-    <%= item %>
-  </li>
-<% end %>
-
+  <% session[:cart].each do |item| %>
+    <li>
+      <%= item %>
+    </li>
+  <% end %>
 </ul>
 Add an Item:
 <%= form_tag add_product_path do %>
